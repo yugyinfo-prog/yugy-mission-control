@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --violet: #5818FF;
+  --violet-dim: #5818FF33;
+  --bg: #0A0A0F;
+  --card: #12121A;
+  --card-border: #1E1E2E;
+  --text: #E4E4E7;
+  --text-dim: #71717A;
+  --green: #22C55E;
+  --red: #EF4444;
+  --yellow: #EAB308;
+  --orange: #F97316;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+/* Progress bar animation */
+@keyframes progressFill {
+  from { width: 0; }
+}
+.progress-bar { animation: progressFill 1s ease-out; }
